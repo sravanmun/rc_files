@@ -27,6 +27,8 @@
 ;; `load-theme' function. This is the default:
 ;; (setq doom-theme 'doom-nord-light)
 (setq doom-theme 'doom-nord)
+;; (setq doom-theme 'doom-gruvbox)
+;; (setq doom-theme 'doom-gruvbox-light)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -36,11 +38,18 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-
 ;; Things added by sravan
 (setq markdown-fontify-code-blocks-natively t)
 (setq markdown-display-inline-images t)
 (setq markdown-enable-math t)
+(setq markdown-enable-html t)
+
+;; Get rid of welcome screen
+(setq inhibit-splash-screen t) 
+
+;; don't put in evil mode by default
+(evil-mode 0)
+
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
